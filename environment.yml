@@ -13,7 +13,5 @@ dependencies:
   - pip:
     - Pystan==2.19.1.1
     - streamlit==1.11.0
-    - mplfinance==0.12.9b1
-    - yfinance
-    - tweepy
-    - yahoo_fin
+    - yfinance==0.1.74
+    - tweepy==4.10.0
