@@ -14,5 +14,5 @@ dependencies:
     - streamlit==1.11.0
     - streamlit_option_menu==0.3.2
     - mplfinance==0.12.9b1
-    - yfinance
-    - tweepy
+    - yfinance==0.1.74
+    - tweepy==4.10.0
