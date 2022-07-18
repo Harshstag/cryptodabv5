@@ -4,7 +4,7 @@ import streamlit as st
 # import plotly.figure_factory as ff
 # import numpy as np
 from multiapp import MultiApp
-from apps import home, predict, compare, volume, twitter, news_module
+from apps import home, compare, volume, twitter, news_module
 # from streamlit_option_menu import option_menu
 from PIL import Image
 
@@ -48,7 +48,7 @@ st.set_page_config(page_title="Cryptodab", page_icon=img, layout='wide',initial_
 
 
 app.add_app('Home',home.app)
-app.add_app("Predict",predict.app)
+# app.add_app("Predict",predict.app)
 app.add_app("Compare",compare.app)
 app.add_app("Volume",volume.app)
 app.add_app("Twitter",twitter.app)
