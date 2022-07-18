@@ -34,8 +34,8 @@ def app():
 
     st.write("<h style='  font-size:30px;'>Your feedback is highly appreciated and will help us to improve our ability to serve you and other users of our web sites. For your convenience, we provide you the following options:</h>", unsafe_allow_html=True)
 
-    if st.button('Click Here to send Feedback'):
-        webbrowser.open_new_tab(url)   
+    link = '[CLICK HERE TO GIVE FEEDBACK ](https://form.jotform.com/221963166587467)'
+    st.markdown(link, unsafe_allow_html=True)
 
     # Use Local CSS File
     def local_css(file_name):
