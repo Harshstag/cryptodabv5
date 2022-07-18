@@ -2,7 +2,7 @@ import streamlit as st
 import webbrowser
 def app():
 
-    url = 'https://form.jotform.com/221963166587467'
+    url = 'https://www.instagram.com/harshstag/'
 
     # st.write("<h style=' color: #0078ff; font-size:50px;'>Send Feedback</h>", unsafe_allow_html=True)    
     st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:50px;'>SEND FEEDBACK</h>", unsafe_allow_html=True)
