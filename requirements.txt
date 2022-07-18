@@ -1,4 +1,3 @@
-fbprophet==0.7.1
 mplfinance==0.12.9b1
 pandas==1.4.3
 Pillow==9.2.0
