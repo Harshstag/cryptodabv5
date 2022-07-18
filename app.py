@@ -50,7 +50,7 @@ app.add_app("Twitter",twitter.app)
 app.add_app("News",news_module.app)
 app.add_app("Price",price.app)
 app.add_app("Contact",contact_form.app)
-app.add_app("Feedback",feedback.app)
+# app.add_app("Feedback",feedback.app)
 
 
 app.run()
