@@ -12,39 +12,45 @@ from urllib.request import urlopen
 import datetime as dt
 import mplfinance as mpf
 import plotly.graph_objects as go
+from itertools import count
+
 
 
 def app():
     # color: #021945;
- 
-
 
     kpi01, kpi02,kpi033 = st.columns([1,15,1])
+
+
     with kpi01: 
         logo = Image.open('img/logo.png')
         st.image(logo, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
+
+
     with kpi02:   
-        # st.title('Cryptodab')
         st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:45px;'>CRYPTODAB</h>", unsafe_allow_html=True)   
         # st.info('Credit: Created by Harsh Singh - [Team HRS](https://github.com/Harshstag)')     
+
+
     with kpi033: 
         logo = Image.open('img/TeamHrs.png')
         st.image(logo, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
-    # st.caption('Credit: Created by Harsh Singh - [Team HRS](https://github.com/Harshstag) ')
-    # st.markdown("<hr/>", unsafe_allow_html=True)
+
 
     st.caption("<h style='font-family:Montserrat; font-weight: bold; font-size:8px;'>CREADIT : CREATED BY HARSH SINGH & ARSHAD KHAN - [ BY [HARSHSTAG](https://github.com/Harshstag) & CP - [BIGDWAF43](https://github.com/bigdwarf43) ] </h>", unsafe_allow_html=True)    
-        
-    
-   
     st.caption('Disclaimer: “Crypto products and [non-fungible tokens] are unregulated and can be highly risky. There may be no regulatory recourse for any loss from such transactions. The Website will not be responsible for any losses, damages or claims arising from cryptomarket.')
-    # st.write("<h style=' font-size:20px;'>A cryptocurrency dashboard webapp from Binance and Yfinance.</h>", unsafe_allow_html=True)     
-    # st.write("<h style=' color: #000000; font-size:15px;'>Disclaimer: “Crypto products and [non-fungible tokens] are unregulated and can be highly risky. There may be no regulatory recourse for any loss from such transactions. The Website will not be responsible for any losses, damages or claims arising from cryptomarket.”</h>", unsafe_allow_html=True)
+    
+    
 
+    # ****************************************************************************************************************************************************************8
+    
     # st.header('**Selected Price**')
+
+
+
     st.markdown("<hr/>", unsafe_allow_html=True)
 
     st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:30px;'>SELECTED PRICE</h>", unsafe_allow_html=True)
@@ -90,14 +96,6 @@ def app():
 
 
     # st.write(col1_df)
-    # st.write(col2_df)
-    # st.write(col3_df)
-    # st.write(col4_df)
-    # st.write(col5_df)
-    # st.write(col6_df)
-    # st.write(col7_df)
-    # st.write(col8_df)
-    # st.write(col9_df)
 
     # Apply a custom function to conditionally round values
     with col1:
@@ -138,9 +136,13 @@ def app():
         st.metric(col8_selection, col8_price, col8_percent)
         st.metric(col9_selection, col9_price, col9_percent)
 
-    # st.header('**All Price**')
+    # *******************************************************************************************************************************************
+
+    # ALL PRICES
+
+
     st.markdown("<hr/>", unsafe_allow_html=True)
-    st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:30px;'>ALL PRICES</h>", unsafe_allow_html=True)
+    st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:35px;'>ALL PRICES</h>", unsafe_allow_html=True)
     # st.markdown("<hr/>", unsafe_allow_html=True)
 
 
@@ -148,16 +150,21 @@ def app():
 
     # *******************************************************************************************************************************************
 
+    # QUICK ACCESS
+
+
+    st.markdown("<hr/>", unsafe_allow_html=True)
+    st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:45px;'>QUICK ACCESS</h>", unsafe_allow_html=True)
+    st.markdown("<hr/>", unsafe_allow_html=True)
 
     # TODAY = date.today().strftime("%Y-%m-%d")
     startt = dt.datetime.now() - dt.timedelta(days=1)
     TODAY = dt.datetime.now()
 
-    # st.title('Crypto Volume Chart ')
     st.markdown("<hr/>", unsafe_allow_html=True)
-    st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:45px;'>QUICK ACCESS</h>", unsafe_allow_html=True)
-    st.markdown("<hr/>", unsafe_allow_html=True)
+    st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:20px;'>TODAY'S PRICE BY MARKET CAP</h>", unsafe_allow_html=True)
 
+    
     title = st.text_input("Search Crypto","BTC-USD")
     df = yf.download({title},strat='2022-10-05',end=TODAY)
 
@@ -169,19 +176,13 @@ def app():
     #fetch history data from yahoo fin 
     BTHHis = BTC_Data.history(period="max")
     BTC = yf.download(Bitcoin,start= startt, end =TODAY)
-
     #Bitcoin 
     st.subheader(title)
-    # st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:30px;'>BITCOIN</h>", unsafe_allow_html=True)
-    # imageBTC = Image.open(urlopen("https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"))
-    # st.image(imageBTC)
-
     #Display Dataframe
     st.table(BTC)
     
 
-    st.markdown("<hr/>", unsafe_allow_html=True)
-    st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:20px;'>TODAY'S PRICE BY MARKET CAP</h>", unsafe_allow_html=True)
+    
     kpi0, kpi1 = st.columns([1,1])
     with kpi0:
         st.bar_chart(BTHHis.Close,width=0, height=0, use_container_width=True)
@@ -191,3 +192,37 @@ def app():
         st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:20px;'>VOLUME CHART</h>", unsafe_allow_html=True)
     st.markdown("<hr/>", unsafe_allow_html=True)
 
+
+    # ****************************************************************************************************************************************************
+   
+    # COMPARE ANUAL RETURNS
+
+
+
+    # Load market data from Binance API
+    df= pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
+    # .markdown("<hr/>", unsafe_allow_html=True)
+    st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:38px;'>COMPARE ANUAL RETURNS </h>", unsafe_allow_html=True)
+    st.markdown("<hr/>", unsafe_allow_html=True)
+
+    tickers = ('BTC-USD','BCH-USD','BQX-BTC','ETH_USD','BNB-USD','NEO-USD','LRC-USD','ZRX-BTC')
+    dropdown1 = st.multiselect('Pick your asssets',tickers,  key = 'BTC-USD')
+   
+    start = st.date_input('Start',value = pd.to_datetime('2021-01-01'))
+    end = st.date_input('End',value = pd.to_datetime('today'))
+    st.markdown("<hr/>", unsafe_allow_html=True)
+
+
+    def relativeret(df2):
+        rel = df2.pct_change()
+        cumret = (1+rel).cumprod()-1
+        cumret = cumret.fillna(0)
+        return cumret
+
+    if len(dropdown1) > 0:
+        df2 = relativeret(yf.download(dropdown1,start,end)['Adj Close'])
+    
+        st.line_chart(df2)
+    st.markdown("<hr/>", unsafe_allow_html=True)
+
+    # *******************************************************************************************************************************************
