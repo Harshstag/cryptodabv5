@@ -1,11 +1,6 @@
-# from email import feedparser
-# from tkinter import Image
 import streamlit as st
-# import plotly.figure_factory as ff
-# import numpy as np
 from multiapp import MultiApp
-from apps import home, compare, volume, twitter, news_module
-# from streamlit_option_menu import option_menu
+from apps import home, compare, volume, twitter, news_module, price, contact_form, feedback
 from PIL import Image
 
 app = MultiApp()
@@ -53,9 +48,9 @@ app.add_app("Compare",compare.app)
 app.add_app("Volume",volume.app)
 app.add_app("Twitter",twitter.app)
 app.add_app("News",news_module.app)
-# app.add_app("Price",price.app)
-# app.add_app("Contact",contact_form.app)
-# app.add_app("Feedback",feedback.app)
+app.add_app("Price",price.app)
+app.add_app("Contact",contact_form.app)
+app.add_app("Feedback",feedback.app)
 
 
 app.run()
