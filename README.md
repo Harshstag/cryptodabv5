@@ -4,7 +4,7 @@
 ## A Crypto/Digital Finance dashboard 
 
 
-## [Cryptodab Live on Streamlit click here ](https://harshstag-cryptodabv5-app-ua7kz8.streamlitapp.com/)
+### [Cryptodab Live on Streamlit click here ](https://harshstag-cryptodabv5-app-ua7kz8.streamlitapp.com/)
 #### Note this release is without prediction_module  will added soon in next update or release
 
 
