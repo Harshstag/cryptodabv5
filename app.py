@@ -1,6 +1,6 @@
 import streamlit as st
 from multiapp import MultiApp
-from apps import home, compare, volume, twitter, news_module, price, contact_form, feedback
+from apps import home, compare, volume, twitter, news_module, price, contact_form
 from PIL import Image
 
 app = MultiApp()
