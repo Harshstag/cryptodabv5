@@ -3,16 +3,17 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - plotly==5.9.0
   - pandas==1.4.3
+  - numpy==1.23.1
   - fbprophet==0.7.1
+  - requests==2.28.1
   - Pillow==9.2.0
-  - Pystan==2.19.1.1
   - pip
   - pip:
-    - plotly==5.9.0
-    - requests==2.28.1
+    - Pystan==2.19.1.1
     - streamlit==1.11.0
-    - streamlit_option_menu==0.3.2
     - mplfinance==0.12.9b1
     - yfinance==0.1.74
     - tweepy==4.10.0
+    - yahoo_fin==0.8.91
