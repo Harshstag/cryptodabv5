@@ -2,9 +2,6 @@ import streamlit as st  # pip install streamlit
 import webbrowser
 
 def app():
-    # st.header(":mailbox: Get In Touch With Me!")
-#     st.markdown("<hr/>", unsafe_allow_html=True)
-
     st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:38px;'>:mailbox:GET IN TOUCH WITH ME!</h>", unsafe_allow_html=True)
     st.markdown("<hr/>", unsafe_allow_html=True)
 
@@ -22,8 +19,7 @@ def app():
 
     st.markdown(contact_form, unsafe_allow_html=True)
 
-    
-#     *******************************************************************************************************************************************************
+    #   *******************************************************************************************************************************************************
 
 
 
