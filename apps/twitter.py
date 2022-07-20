@@ -6,7 +6,7 @@ import requests
 
 def app():
 	# st.write("<h style=' color: #0078ff;font-weight: bold; font-size:50px;'>Stock tweets</h>", unsafe_allow_html=True)
-	st.write("<h style='font-family:Montserrat; color: #0078ff; font-weight: bold; font-size:50px;'>CRYPTO TWEETES</h>", unsafe_allow_html=True)
+	st.write("<h style='font-family:Montserrat; color: #0078ff; font-weight: bold; font-size:40px;'>CRYPTO TWEETES</h>", unsafe_allow_html=True)
 
 	option = st.selectbox(" ",('Trending tweets', 'user tweets'))
 
