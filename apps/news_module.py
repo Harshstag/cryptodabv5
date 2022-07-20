@@ -5,7 +5,7 @@ api_key='ed0b00cc442c4ad183e455e7df4a477c'
 
 def app():
 	# st.write("<h style=' color: #0078ff; font-size:50px;'>NEWS & More</h>", unsafe_allow_html=True)
-	st.write("<h style='font-family:Montserrat; color: #FF0000; font-weight: bold; font-size:50px;'>:newspaper:NEWS & MORE</h>", unsafe_allow_html=True)
+	st.write("<h style='font-family:Montserrat; color: #FF0000; font-weight: bold; font-size:40px;'>:newspaper:NEWS & MORE</h>", unsafe_allow_html=True)
 	st.markdown("<hr/>", unsafe_allow_html=True)
 
 	# st.write("Select category")
