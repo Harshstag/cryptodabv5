@@ -19,24 +19,7 @@ from itertools import count
 def app():
     # color: #021945;
 
-    kpi01, kpi02,kpi033 = st.columns([1,15,1])
-
-
-    with kpi01: 
-        logo = Image.open('img/logo.png')
-        st.image(logo, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-
-
-
-    with kpi02:   
-        st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:45px;'>CRYPTODAB</h>", unsafe_allow_html=True)   
-        # st.info('Credit: Created by Harsh Singh - [Team HRS](https://github.com/Harshstag)')     
-
-
-    with kpi033: 
-        logo = Image.open('img/TeamHrs.png')
-        st.image(logo, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-
+    st.write("<h style='font-family:Montserrat; font-weight: bold; font-size:45px;'>CRYPTODAB</h>", unsafe_allow_html=True)
 
 
 
