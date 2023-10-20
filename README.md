@@ -37,21 +37,11 @@ tweepy
 ```
 
 
+<img src="img/Screenshot (277).png"  style="width:50%"/>
 
-# Feedback 
+<img src="img/Screenshot (276).png"  style="width:50%"/>
 
-Your feedback is highly appreciated and will help us to improve our ability to serve you and other users of our web sites. For your convenience, we provide you the following options:
-
-### [Feedback Link click here ](https://form.jotform.com/221963166587467)
-
-
-
-
-
-## Disclaimer:
-
-“Crypto products and [non-fungible tokens] are unregulated and can be highly risky. There may be no regulatory recourse for any loss from such transactions. The Website will not be responsible for any losses, damages or claims arising from cryptomarket
-
+<img src="img/Screenshot (279).png"  style="width:50%"/>
 
 
 
